@@ -5,6 +5,9 @@
             <%= stylesheet_link_tag "application", media: "all",
                "data-turbolinks-track" => true %>
             <%= csrf_meta_tag %>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+            <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
         </head>
         <body class="<%= controller.controller_name %>">
             <div id="banner">
@@ -13,10 +16,11 @@
             </div>
             <div id="columns">
                 <div id="side">
-
-                    <div id="cart">
-                        <%= render @cart %>
-                    </div>
+                    <% if @cart %>
+                         <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+                              <%= render @cart %>
+                         <% end %>
+                    <% end %>
 
                      <ul>
                          <li><%= Time.now.strftime("%d-%m-%Y %H:%M:%S") %></li>
