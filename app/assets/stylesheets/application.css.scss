@@ -14,11 +14,11 @@
  *= require_self
  */
 #banner {
-  background: #9c9;
+  background: #a96d8e;
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  color: #7e3d4a;
   text-align: center;
   img {
     float: left;
@@ -35,7 +35,7 @@
 }
 
 #columns {
-  background: #141;
+  background: #7e3d4a;
   #main {
     margin-left: 17em;
     padding: 1em;
@@ -45,7 +45,7 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background: #7e3d4a;
 
     form, div {
       display: inline;
@@ -60,8 +60,8 @@
       color: white;
 
       table {
-        border-top: 1px dotted #595;
-        border-bottom: 1px dotted #595;
+        border-top: 1px dotted #ffbbd1;
+        border-bottom: 1px dotted #ffbbd1;
         margin-bottom: 10px;
       }
     }
@@ -70,10 +70,10 @@
       padding: 0;
       li {
         list-style: none;
-        color: #bfb;
+        color: #ffbbd1;
         font-size: small;
         a {
-          color: #bfb;
+          color: #ffbbd1;
           font-size: small;
         }
       }
@@ -82,10 +82,10 @@
 }
 .depot_form {
   fieldset {
-    background: #efe;
+    background: #e0b9ca;
     legend {
-      color: #dfd;
-      background: #141;
+      color: #ffbbd1;
+      background: #7e3d4a;
       font-family: sans-serif;
       padding: 0.2em 1em;
     } }
